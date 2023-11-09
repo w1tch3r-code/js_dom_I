@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Vertiefung – DOM I</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <section class="section__task">
+            <div class="style">
+                <div class="example">
+                    Ein div mit class="example".
+                </div>
+                <div class="example">
+                    Ein weiteres div mit class="example".
+                </div>
+                <p class="example">Dies ist ein p-Element mit class="example"</p>
+                <p>Dies ist ein <span class="example">span</span> Element mit class="example" in einem anderen p-Element.</p>
+                <p>Klicken Sie auf die Button, um die Hintergrundfarbe aller Elemente mit class="example" zu ändern.</p>
+                <button class="example" onclick="myFunction()">Versuchen Sie es</button>
+            </div>
+        </section>
+        <section class="section__task">
+            <ul id="myList">
+                <li>Super Mario World</li>
+                <li>The Legend of Zelda</li>
+                <li>Portal 2</li>
+                <li>Tetris</li>
+                <li>Half-Life 2</li>
+                <li>Red Dead Redemption</li>
+                <li>Grand Theft Auto V</li>
+            </ul>
+            <div class="unten">
+                <button># firstElementChild</button><br>
+                <button># lastElementChild</button><br>
+                <button># firstElementChild nextElementSibling</button><br>
+                <button># lastElementChild previousElementSibling</button>
+            </div>
+            <h2>Output</h2>
+            <div id="output"></div>
+        </section>
+        <section class="section__task">
+            <h2>Meine Einkaufsliste</h2>
+            <div>
+                <input type="text" id="inputText" placeholder="Ich benötige..." />
+                <button id="btnAdd">Hinzufügen</button>
+            </div>
+            <ul id="myList2">
+                <!-- Hier werden die dynamisch hinzugefügten Elemente erscheinen -->
+            </ul>
+        </section>
+        <section class="section__task">
+            <form>
+                <select id="farbeAuswahlen">
+                    <option>Medium Orchid</option>
+                    <option>Mint Cream</option>
+                    <option>Dodger Blue</option>
+                    <option>Goldenrod</option>
+                    <option>Wheat</option>
+                    <option>Medium Turquoise</option>
+                    <option>Moccasin</option>
+                    <option>Fire Brick</option>
+                    <option>Lime Green</option>
+                    <option>Slate Gray</option>
+                </select>
+                <button id="button">Farbe von Liste Entfernen</button>
+            </form>
+        </section>
+        <section class="section__task">
+            <ul class="nav">
+                <div class="listContainer">
+                    <li><a class="nav" id="navHome" href="#home">Home</a></li>
+                    <li><a class="nav" id="navNews" href="#news">News</a></li>
+                    <li><a class="nav" id="navContact" href="#contact">Contact</a></li>
+                </div>
+                <li class="nav"><a class="active" id="navChange">Change me</a></li>
+            </ul>
+        
+        </section>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

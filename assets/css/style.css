@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+/* ========================================================== 
+                            Resets
+========================================================== */
+
+* {
+	/* margin: 0;
+	padding: 0; */
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+/* ========================================================== 
+                        Image Links
+========================================================== */
+
+/* https://source.unsplash.com/random?night sky */
+/* https://source.unsplash.com/random/?Cryptocurrency&1 */
+/* https://picsum.photos/300/300?random=1 */
+
+/* ========================================================== 
+                            Fonts
+========================================================== */
+
+/* ========================================================== 
+                Variables / Custom Properties
+========================================================== */
+
+/* ========================================================== 
+                            Body
+========================================================== */
+
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	min-height: 100vh;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+	scroll-behavior: smooth;
+	padding: 10px;
+	background: #3fc5f0;
+	color: #414431;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    
+}
+
+/* ========================================================== 
+                            Content
+========================================================== */
+
+.section__task {
+	border-bottom: 2px solid #194f61;
+	min-width: 100%;
+	padding-block: 2vh;
+}
+
+.style {
+	display: inline-block;
+	border-radius: 5px;
+	background: #666;
+	color: white;
+	padding: 5px;
+}
+
+.example {
+	border: 1px solid black;
+	margin: 5px;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.unten button {
+	padding: 5px;
+	margin: 5px;
+	border-radius: 5px;
+	background: #42dee1;
+	color: #414431;
+	font-weight: bold;
+}
+
+#myList {
+	padding-block: 2vh;
+}
+
+h1 {
+	padding-block-start: 20px;
+}
+
+form {
+	padding: 5px;
+	display: inline-block;
+	background: #999;
+	border-radius: 5px;
+	margin-block: 2vh;
+}
+
+input, select {
+	background: #333;
+	color: white;
+	padding: 5px;
+}
+
+#btnAdd, #button {
+	padding: 5px;
+}
+
+ul.nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	display: flex;
+	justify-content: space-between;
+}
+
+.listContainer {
+	display: flex;
+}
+
+.first__li {
+	background-color: deeppink;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover:not(.active) {
+	background-color: #111;
+}
+
+.active {
+	background-color: #4CAF50;
+	cursor: pointer;
+}
